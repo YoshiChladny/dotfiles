@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+## General
+
+# Disable smart quotes
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable smart dashes
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+
+
+
+## control strip
+
+# Always display full control strip (ignoring App Controls)
+defaults write com.apple.touchbar.agent 'PresentationModeGlobal' -string fullControlStrip
+
+# Remove Siri from control strip
+defaults write com.apple.controlStrip 'FullCustomized' -array \
+  'com.apple.system.group.brightness' \
+  'com.apple.system.mission-control' \
+  'com.apple.system.launchpad' \
+  'com.apple.system.group.keyboard-brightness' \
+  'com.apple.system.group.media' \
+  'com.apple.system.group.volume'
+
+
+## Screenshots
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string “$HOME/Desktop”
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string “png”
+
+## Big Dock Energy
+#
+
+# Set dock size
+defaults write com.apple.dock tilesize -int 38
+
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Disable recent applications
+defaults write com.apple.dock show-recents -bool false
+
+# Disable mouseover magnification
+defaults write com.apple.dock magnification -bool false
+
+## Hey Siri, go away please
+#
+
+# Disable Siri
+defaults write com.apple.Siri StatusMenuVisible -bool false
+defaults write com.apple.assistant.support 'Assistant Enabled' -bool false
