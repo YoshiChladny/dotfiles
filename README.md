@@ -18,5 +18,5 @@ Development environment
   1. Run `install.sh`
 
       ```console
-      $ ./install.sh
+      $ sh ./install.sh
       ```
