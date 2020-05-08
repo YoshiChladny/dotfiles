@@ -1,4 +1,6 @@
-# dotfiles
+<img src="_img/dotfiles-logo.png" alt="dotfiles logo" width="350">
+---
+
 Development environment
 
 * fish

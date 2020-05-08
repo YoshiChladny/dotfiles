@@ -1,3 +1,5 @@
+#! /usr/bin/env sh
+
 echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
