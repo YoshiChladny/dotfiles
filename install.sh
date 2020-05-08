@@ -21,6 +21,14 @@ echo "Setting up iTerm2 Theme...."
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
+## install fish, fisher and set up functions
+mkdir -p ~/.config/fish/functions  # Create directory for fish-shell
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+
+
+
+
+## macos settings
 echo "Setting up MacOS defaults..."
 exec ./.macos
 
