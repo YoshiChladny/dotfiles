@@ -11,19 +11,17 @@ brew 'mas'
 mas 'Xcode', id: 497799835
 mas 'Magnet', id: 441258766
 
-brew 'awscli'
-brew 'azure-cli'
+
 brew 'bash'
 brew 'bat'
-brew 'cowsay'
 brew 'curl'
 brew 'dive'
 brew 'fish'
 brew 'gh'
 brew 'git'
 brew 'hub'
-brew 'kubernetes-cli'
-brew 'kubernetes-helm'
+brew 'kubectl'
+brew 'helm'
 brew 'openssl'
 brew 'python3'
 brew 'ruby'
@@ -48,9 +46,9 @@ cask 'google-cloud-sdk'
 cask 'insomnia'
 cask 'iterm2'
 cask 'notion'
+cask 'signal'
 cask 'slack'
 cask 'visual-studio-code'
-cask 'zoomus'
 
 
 # fonts
@@ -60,7 +58,5 @@ cask 'font-roboto'
 cask 'font-roboto-condensed'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
 cask 'font-space-grotesk'
 
